@@ -1,5 +1,5 @@
 from pip._vendor.distlib.compat import raw_input
-from image import *
+from ascii_converter.image import *
 
 while True:
     try:

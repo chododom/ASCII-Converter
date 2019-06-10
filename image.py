@@ -6,7 +6,7 @@ ASCII_STRING = "`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%
 class JPG:
     def __init__(self, path):
         img = Image.open("./dataset/" + path + ".jpg")  # converts image to 8-bit greyscale
-        img.thumbnail((100, 100))
+        img.thumbnail((70, 70))
         data = list(img.getdata())  # convert image data to a list of integers
         # create a list of lists with pixel rows
         self.pixels = [data[offset: offset + img.width] for offset in range(0, len(data), img.width)]
